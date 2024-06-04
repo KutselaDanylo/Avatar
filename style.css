@@ -1,0 +1,258 @@
+:root{
+--first-color:#FFFFFF;
+--second-color:#0B0E66;
+--third-color:#26C7EA;
+--fourht-color:#141414;
+--fift-color:#0A3853;
+--hover-color:#94CFFF;
+}
+.overoll-div{
+    margin: 0 auto;
+    width: 1440px;
+    border: solid 1px blue;
+}
+/* .container{
+    font-family: Inter;
+    max-width: 1030px;
+    padding:0 auto;
+    margin: 0 auto;
+    border: solid 1px red;
+}  */
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+li{
+    padding-inline-start: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    list-style-type: none;
+    text-align: none;
+}
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+a{
+    cursor: pointer;
+    width: 200px;
+    text-decoration: none;
+    color: var(--first-color);
+}
+.header-overlay-div{
+    height: 141px;
+    border: solid 1px var(--fourht-color);
+    background-image: url(../img/Rectangle\ 104.jpg);
+    background-repeat: no-repeat;
+}
+.header-div{
+    padding-top: 30px;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px var(--first-color);
+    padding-bottom: 70px;
+}
+.header-nav{
+    margin-left: 170px;
+    display: flex;
+    align-items: center;
+}
+.header-ul{
+    gap: 42px;
+    display: flex;
+    flex-direction: row;
+    color: var(--fourht-color);
+}
+.header-ul-li{
+    padding-left: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.header-p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24.2px;
+}
+.header-a:hover{
+    color: var(--hover-color);
+}
+.header-button{
+    height: 41px;
+    width: 141px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.05px;
+    text-align: justified;
+    border-radius: 35px 0px;
+    font-family: Headl and One;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    border: solid 2px var(--third-color);
+}
+.main-overlay-div{
+   width: 100%;
+   height: 740px;
+   background-image: url( ../img/Group\ 48\ 1.jpg);
+   background-repeat: no-repeat;
+}
+.main-p::after{
+
+    content: url(../img/Rectangle\ 53.svg);
+    background-repeat: no-repeat;
+}
+.main-p{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;    
+    color: var(--first-color);
+    max-width: 298px;
+}
+.main-p-li{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+    max-width: 300px;
+    color: var(--first-color);
+    max-width: 371px;
+}
+.main-button{
+    padding-left: 10px;
+    width: 260px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.06px;
+    text-align: center;
+    border: 3px  ;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    border: solid 3px var(--third-color);
+    border-radius: 45px 0px;
+}
+.li-img{
+    margin-left: 20px;
+    padding-bottom: 24px;
+}
+.main-overlay-div-bottom{
+    max-width: 1030px;
+    max-height: 350px;
+}
+.main-h1{
+    color: var(--fift-color);
+    max-width: 727px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    margin-left: 150px;
+}
+.main-h1-second{
+    color: var(--fift-color);
+    max-width: 1002px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    margin-left: 10px;
+    line-height: 0px;
+}
+.main-p-overlay-bottom{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: center;
+}
+.bckground-img-div{
+    background-image: url(../img/Rectangle\ 103\ \(1\).jpg );
+    background-repeat: no-repeat;
+}
+.overlay-button{
+    max-width: 100%;
+    height: 741px;
+    background-image: url(../img/Rectangle\ 10.jpg);
+    background-repeat: no-repeat;
+}
+.button-overlay{
+    margin-left: 590px;
+    margin-top: 330px;
+    padding-left: 16px;
+    width: 260px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.06px;
+    text-align: center;
+    border: 3px  ;
+    color: var(--third-color);
+    background-color: var(--second-color);
+    border: solid 3px var(--third-color);
+    border-radius: 45px 0px;
+}
+.main-overlay-div-bottom-second{
+
+}
+.h1-main{
+    margin-left: 60px;
+    max-width: 886px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+}
+.h1-main-second{
+    max-width: 1002px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    margin-left: 250px;
+    line-height: 0px;
+}
+.overlay-ul{
+    width: 100%;
+    height: 704px;
+    background-image: url(../img/Rectangle\ 20.jpg);
+    background-repeat: no-repeat;
+}
+.ul-itam::before{
+    content: " ";
+    display: block;
+    width: 320px;
+    height: 240px;
+    border-radius: 3px;
+    background-color: #FFFFFFB2;
+}
+.ul-itam::before{
+    content: " ";
+    display: block;
+    width: 320px;
+    height: 240px;
+    border-radius: 3px;
+    background-color: #FFFFFFB2;
+}
+.ul-itam::before{
+    content: " text asd;fljk ";
+    display: block;
+    width: 320px;
+    height: 240px;
+    border-radius: 3px;
+    background-color: #FFFFFFB2;
+}
+.ul-itam:first-child::before{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ul-itam:nth-child(2)::before{
+    background-image: url(./img/clock\ 1.svg);
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.ul-itam:nth-child(3)::before{
+    background-repeat:no-repeat;
+    background-position: center;
+}
