@@ -4,20 +4,17 @@
 --third-color:#26C7EA;
 --fourht-color:#141414;
 --fift-color:#0A3853;
+--sixt-color:#141414;
 --hover-color:#94CFFF;
-}
-.overoll-div{
+} 
+ .container{
+    max-width: 1032px;
     margin: 0 auto;
-    width: 1440px;
-    border: solid 1px blue;
-}
-/* .container{
+    border: none;
+}   
+body{
     font-family: Inter;
-    max-width: 1030px;
-    padding:0 auto;
-    margin: 0 auto;
-    border: solid 1px red;
-}  */
+}
 ul {
     display: block;
     list-style-type: none;
@@ -28,9 +25,11 @@ ul {
     padding-inline-start: 0px;
 }
 li{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     padding-inline-start: 0px;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     list-style-type: none;
     text-align: none;
 }
@@ -39,20 +38,22 @@ p{
     margin-block-end: 0px;
 }
 a{
-    cursor: pointer;
     width: 200px;
     text-decoration: none;
     color: var(--first-color);
 }
 .header-overlay-div{
-    height: 141px;
-    border: solid 1px var(--fourht-color);
-    background-image: url(../img/Rectangle\ 104.jpg);
+    margin-bottom: 3px;
+    background-position:50% 32%;
+    background-size: cover;
+    height: 150px;
+    background-image: linear-gradient( rgba(47,74,97,0.87), rgba(47,74,97,0.87)), 
+    url(../img/Rectangle\ 104\ \(2\).jpg);
     background-repeat: no-repeat;
 }
 .header-div{
     padding-top: 30px;
-    margin-left: 65px;
+    margin-left: 440px;
     display: flex;
     align-items: center;
     border-bottom: solid 1px var(--first-color);
@@ -62,6 +63,13 @@ a{
     margin-left: 170px;
     display: flex;
     align-items: center;
+}
+.header-li:hover{
+    color: var(--third-color);
+    max-width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
 }
 .header-ul{
     gap: 42px;
@@ -96,13 +104,18 @@ a{
     border: solid 2px var(--third-color);
 }
 .main-overlay-div{
-   width: 100%;
+   background-size: cover;
    height: 740px;
    background-image: url( ../img/Group\ 48\ 1.jpg);
    background-repeat: no-repeat;
 }
-.main-p::after{
-
+.main-overlay-div-ul{
+    padding-top: 184px;
+    max-width: 376px;
+    max-height: 381px;
+}
+.main-p-li::before{
+    display: block;
     content: url(../img/Rectangle\ 53.svg);
     background-repeat: no-repeat;
 }
@@ -138,6 +151,10 @@ a{
     border: solid 3px var(--third-color);
     border-radius: 45px 0px;
 }
+.main-overlay-div-bottom{
+    padding-left: 0px;
+    padding-left: 982px;
+}
 .li-img{
     margin-left: 20px;
     padding-bottom: 24px;
@@ -167,20 +184,25 @@ a{
     font-size: 24px;
     font-weight: 400;
     line-height: 29.05px;
-    text-align: center;
+    margin-left: 430px;
 }
-.bckground-img-div{
-    background-image: url(../img/Rectangle\ 103\ \(1\).jpg );
+.main-p-overlay-bottom::after{
+    margin-left: -140px;
+    max-width: 400px;
+    max-height: 120px;
+    display: block;
+    content: url(../img/Rectangle\ 8.svg);
     background-repeat: no-repeat;
+    margin-bottom: 10px;
 }
 .overlay-button{
-    max-width: 100%;
+    background-size: cover;
     height: 741px;
     background-image: url(../img/Rectangle\ 10.jpg);
     background-repeat: no-repeat;
 }
 .button-overlay{
-    margin-left: 590px;
+    margin-left: 386px;
     margin-top: 330px;
     padding-left: 16px;
     width: 260px;
@@ -195,15 +217,13 @@ a{
     border: solid 3px var(--third-color);
     border-radius: 45px 0px;
 }
-.main-overlay-div-bottom-second{
-
-}
 .h1-main{
     margin-left: 60px;
     max-width: 886px;
     font-size: 36px;
     font-weight: 400;
     line-height: 43.57px;
+    color: var(--fourht-color);
 }
 .h1-main-second{
     max-width: 1002px;
@@ -212,47 +232,99 @@ a{
     line-height: 43.57px;
     margin-left: 250px;
     line-height: 0px;
+    color: var(--fourht-color);
 }
-.overlay-ul{
-    width: 100%;
+.overlay-ul-div{
+    font-family: Headland One;
+    background-size: cover;
     height: 704px;
     background-image: url(../img/Rectangle\ 20.jpg);
     background-repeat: no-repeat;
 }
-.ul-itam::before{
+.main-bottom-p-overlay{
+    padding-top: 62px;
+    padding-bottom: 45px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: center;
+}
+.div-overlay-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+}
+.ul-itam{
     content: " ";
     display: block;
     width: 320px;
     height: 240px;
-    border-radius: 3px;
     background-color: #FFFFFFB2;
+    margin-bottom: 24px;
 }
-.ul-itam::before{
-    content: " ";
+.first-overlay-p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--fourht-color);
+    margin-bottom: 37px;
+}
+.second-overlay-p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--fourht-color);
+    margin-bottom: 37px;
+}
+.third-overlay-p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--fourht-color);
+    margin-bottom: 37px;
+}
+.overlay-li-p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--fourht-color);
+    margin-bottom: 38px;
+}
+.overlay-ul-div-h1{
+    max-width: 940px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    color: var(--fourht-color);
+}
+.overlay-ul-div-h1-second{
+    max-width: 812px;
+    margin-left: 66px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    line-height: 0px;
+    color: var(--fourht-color);
+}
+.overlay-ul-div-p{
+    max-width: 84px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: center;
+}
+.bottom-main-p-overlay{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    margin-left: 450px;
+}
+.bottom-main-p-overlay::after{
+    margin-left: -170px;
+    max-width: 400px;
+    max-height: 120px;
     display: block;
-    width: 320px;
-    height: 240px;
-    border-radius: 3px;
-    background-color: #FFFFFFB2;
-}
-.ul-itam::before{
-    content: " text asd;fljk ";
-    display: block;
-    width: 320px;
-    height: 240px;
-    border-radius: 3px;
-    background-color: #FFFFFFB2;
-}
-.ul-itam:first-child::before{
+    content: url(../img/Rectangle\ 8.svg);
     background-repeat: no-repeat;
-    background-position: center;
-}
-.ul-itam:nth-child(2)::before{
-    background-image: url(./img/clock\ 1.svg);
-    background-repeat:no-repeat;
-    background-position: center;
-}
-.ul-itam:nth-child(3)::before{
-    background-repeat:no-repeat;
-    background-position: center;
+    margin-bottom: 10px;
 }
