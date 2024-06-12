@@ -44,12 +44,13 @@ a{
 }
 .header-overlay-div{
     margin-bottom: 3px;
-    background-position:50% 32%;
+    background-position:100% 35%;
     background-size: cover;
-    height: 150px;
+    max-height: 150px;
     background-image: linear-gradient( rgba(47,74,97,0.87), rgba(47,74,97,0.87)), 
-    url(../img/Rectangle\ 104\ \(2\).jpg);
+    url(../img/Rectangle\ 104\ \(8\).png);
     background-repeat: no-repeat;
+    margin-right: -14px;
 }
 .header-div{
     padding-top: 30px;
@@ -63,6 +64,11 @@ a{
     margin-left: 170px;
     display: flex;
     align-items: center;
+}
+.header-li{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24.2px;
 }
 .header-li:hover{
     color: var(--third-color);
@@ -114,19 +120,20 @@ a{
     max-width: 376px;
     max-height: 381px;
 }
-.main-p-li::before{
-    display: block;
-    content: url(../img/Rectangle\ 53.svg);
-    background-repeat: no-repeat;
-}
 .main-p{
-    font-family: Inter;
     font-size: 20px;
     font-weight: 400;
     line-height: 24.2px;
     text-align: left;    
     color: var(--first-color);
     max-width: 298px;
+}
+.main-p-li::before{
+    max-width: 152px;
+    max-height: 40px;
+    display: block;
+    content: url(../img/Rectangle\ 53\ \(1\).svg);
+    background-repeat: no-repeat;
 }
 .main-p-li{
     font-size: 20px;
@@ -136,6 +143,7 @@ a{
     max-width: 300px;
     color: var(--first-color);
     max-width: 371px;
+    padding-bottom: 50px;
 }
 .main-button{
     padding-left: 10px;
@@ -152,7 +160,7 @@ a{
     border-radius: 45px 0px;
 }
 .main-overlay-div-bottom{
-    padding-left: 0px;
+    margin-bottom: 120px;
     padding-left: 982px;
 }
 .li-img{
@@ -262,26 +270,81 @@ a{
     background-color: #FFFFFFB2;
     margin-bottom: 24px;
 }
+.first-overlay-p::after{
+    content: url(../img/Rectangle\ 42\ \(2\).svg);
+    display: block;
+    margin-top: 37px;
+    margin-bottom: 40px;
+    max-width: 152px;
+    max-height: 40px;
+    background-repeat: no-repeat;
+    padding-left: 84px;
+}
 .first-overlay-p{
+    padding-top: 39px;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
     color: var(--fourht-color);
     margin-bottom: 37px;
+    text-align: center;
+}
+.second-overlay-p::after{
+    content: url(../img/Rectangle\ 99\ \(2\).svg);
+    display: block;
+    margin-top: 37px;
+    margin-bottom: 40px;
+    max-width: 152px;
+    max-height: 40px;
+    background-repeat: no-repeat;
+    padding-left: 74px;
 }
 .second-overlay-p{
+    padding-top: 36px;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
     color: var(--fourht-color);
     margin-bottom: 37px;
+    text-align: center;
+}
+.third-overlay-p::after{
+    content: url(../img/Rectangle\ 96\ \(1\).svg);
+    display: block;
+    margin-top: 37px;
+    margin-bottom: 40px;
+    max-width: 152px;
+    max-height: 40px;
+    background-repeat: no-repeat;
+    padding-left: 84px;
 }
 .third-overlay-p{
+    padding-top: 46px;
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
     color: var(--fourht-color);
     margin-bottom: 37px;
+    text-align: center;
+}
+.p-third-overlay{
+    content: url(../img/Rectangle\ 96\ \(1\).svg);
+    display: block;
+    margin-top: 37px;
+    margin-bottom: 40px;
+    max-width: 152px;
+    max-height: 40px;
+    background-repeat: no-repeat;
+    padding-left: 84px;
+}
+.p-third-overlay{
+    padding-top: 46px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--fourht-color);
+    margin-bottom: 37px;
+    text-align: center;
 }
 .overlay-li-p{
     font-size: 24px;
@@ -289,6 +352,15 @@ a{
     line-height: 24px;
     color: var(--fourht-color);
     margin-bottom: 38px;
+    text-align: center;
+}
+.overlay-li-p-div{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--fourht-color);
+    margin-bottom: 38px;
+    text-align: center;
 }
 .overlay-ul-div-h1{
     max-width: 940px;
@@ -317,14 +389,59 @@ a{
     font-size: 24px;
     font-weight: 400;
     line-height: 29.05px;
-    margin-left: 450px;
+    text-align: center  ;
 }
 .bottom-main-p-overlay::after{
-    margin-left: -170px;
+    margin-left: 305px;
     max-width: 400px;
     max-height: 120px;
     display: block;
     content: url(../img/Rectangle\ 8.svg);
     background-repeat: no-repeat;
     margin-bottom: 10px;
+}
+.footer-div-img{
+    padding: 42px 82px 43px 82px;   
+    max-height: 152px;
+    border-right: solid 2px var(--first-color);
+}
+.footer-img{
+    max-width: 183px;
+    max-height: 70px;
+}
+.div-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-overlay{
+    display: flex;
+    flex-direction: row;
+    background-position:100% 45%;
+    background-size: cover;
+    max-height: 223px;
+    background-image: linear-gradient( rgba(47,74,97,0.87), rgba(47,74,97,0.87)), 
+    url(../img/Rectangle\ 104\ \(8\).png);
+    background-repeat: no-repeat;
+    margin-right: -14px;
+}
+.footer-ul{
+    display: flex;
+    flex-direction: row;
+    color: var(--first-color);
+}
+.footer-flex-ul{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    color: var(--first-color);
+}
+.footer-ul-flex{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    color: var(--first-color);
+}
+.footer-text{
+    color: var(--first-color);
 }
