@@ -48,7 +48,7 @@ a{
     background-size: cover;
     max-height: 150px;
     background-image: linear-gradient( rgba(47,74,97,0.87), rgba(47,74,97,0.87)), 
-    url(../img/Rectangle\ 104\ \(8\).png);
+    url(../img/FIsh-in-water\(8\).png);
     background-repeat: no-repeat;
     margin-right: -14px;
 }
@@ -88,6 +88,80 @@ a{
     display: flex;
     flex-direction: row;
 }
+.header-span{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    color: transparent;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    color: transparent;
+  }
+  .slider {
+    border: var(--first-color) solid 1px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--first-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px ;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+.span-eng{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    padding-top: 5px;
+    margin-left: 90px;
+    color: var(--first-color);
+}
+.span-ua{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    padding-top: 5px;
+    color: var(--first-color);
+}
 .header-p{
     font-size: 20px;
     font-weight: 300;
@@ -102,7 +176,6 @@ a{
     font-size: 20px;
     font-weight: 400;
     line-height: 25.05px;
-    text-align: justified;
     border-radius: 35px 0px;
     font-family: Headl and One;
     color: var(--third-color);
@@ -111,8 +184,8 @@ a{
 }
 .main-overlay-div{
    background-size: cover;
-   height: 740px;
-   background-image: url( ../img/Group\ 48\ 1.jpg);
+   height: 980px;
+   background-image: url(../img/Avatar-man.jpg);
    background-repeat: no-repeat;
 }
 .main-overlay-div-ul{
@@ -132,17 +205,18 @@ a{
     max-width: 152px;
     max-height: 40px;
     display: block;
-    content: url(../img/Rectangle\ 53\ \(1\).svg);
+    content: url(../img/arrow\ left-wite.svg);
     background-repeat: no-repeat;
+    padding-left: 54px;
 }
 .main-p-li{
     font-size: 20px;
     font-weight: 400;
     line-height: 24.2px;
     text-align: left;
-    max-width: 300px;
+    max-width: 376px;
     color: var(--first-color);
-    max-width: 371px;
+    max-width: 289px;
     padding-bottom: 50px;
 }
 .main-button{
@@ -159,13 +233,16 @@ a{
     border: solid 3px var(--third-color);
     border-radius: 45px 0px;
 }
-.main-overlay-div-bottom{
+.main-img-div-bottom{
     margin-bottom: 120px;
     padding-left: 982px;
 }
 .li-img{
     margin-left: 20px;
     padding-bottom: 24px;
+}
+.main-img{
+    padding-bottom: 200px;
 }
 .main-overlay-div-bottom{
     max-width: 1030px;
@@ -199,14 +276,14 @@ a{
     max-width: 400px;
     max-height: 120px;
     display: block;
-    content: url(../img/Rectangle\ 8.svg);
+    content: url(../img/Big-bird.svg);
     background-repeat: no-repeat;
     margin-bottom: 10px;
 }
 .overlay-button{
     background-size: cover;
-    height: 741px;
-    background-image: url(../img/Rectangle\ 10.jpg);
+    height: 980px;
+    background-image: url(../img/Avatar-vumen.jpg);
     background-repeat: no-repeat;
 }
 .button-overlay{
@@ -246,7 +323,7 @@ a{
     font-family: Headland One;
     background-size: cover;
     height: 704px;
-    background-image: url(../img/Rectangle\ 20.jpg);
+    background-image: url(../img/Stone-sky.jpg);
     background-repeat: no-repeat;
 }
 .main-bottom-p-overlay{
@@ -271,7 +348,7 @@ a{
     margin-bottom: 24px;
 }
 .first-overlay-p::after{
-    content: url(../img/Rectangle\ 42\ \(2\).svg);
+    content: url(../img/arrow-left.svg);
     display: block;
     margin-top: 37px;
     margin-bottom: 40px;
@@ -290,7 +367,7 @@ a{
     text-align: center;
 }
 .second-overlay-p::after{
-    content: url(../img/Rectangle\ 99\ \(2\).svg);
+    content: url(../img/smal-bird.svg);
     display: block;
     margin-top: 37px;
     margin-bottom: 40px;
@@ -309,7 +386,7 @@ a{
     text-align: center;
 }
 .third-overlay-p::after{
-    content: url(../img/Rectangle\ 96\ \(1\).svg);
+    content: url(../img/arrow-right.svg);
     display: block;
     margin-top: 37px;
     margin-bottom: 40px;
@@ -327,25 +404,7 @@ a{
     margin-bottom: 37px;
     text-align: center;
 }
-.p-third-overlay{
-    content: url(../img/Rectangle\ 96\ \(1\).svg);
-    display: block;
-    margin-top: 37px;
-    margin-bottom: 40px;
-    max-width: 152px;
-    max-height: 40px;
-    background-repeat: no-repeat;
-    padding-left: 84px;
-}
-.p-third-overlay{
-    padding-top: 46px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--fourht-color);
-    margin-bottom: 37px;
-    text-align: center;
-}
+
 .overlay-li-p{
     font-size: 24px;
     font-weight: 400;
@@ -361,6 +420,9 @@ a{
     color: var(--fourht-color);
     margin-bottom: 38px;
     text-align: center;
+}
+.overlay-ul-div-second{
+    margin-left: 30px;
 }
 .overlay-ul-div-h1{
     max-width: 940px;
@@ -389,59 +451,71 @@ a{
     font-size: 24px;
     font-weight: 400;
     line-height: 29.05px;
-    text-align: center  ;
+    text-align: center;
 }
 .bottom-main-p-overlay::after{
-    margin-left: 305px;
+    margin-left: 293px;
     max-width: 400px;
     max-height: 120px;
     display: block;
-    content: url(../img/Rectangle\ 8.svg);
+    content: url(../img/Big-bird.svg);
     background-repeat: no-repeat;
     margin-bottom: 10px;
 }
-.footer-div-img{
-    padding: 42px 82px 43px 82px;   
-    max-height: 152px;
-    border-right: solid 2px var(--first-color);
+.footer-img{
+    display: block;
+    max-height: 153px;
+    padding-top: 42px;
+    padding-bottom: 43px;
+    margin-top: 35px;
+    margin-left: 206px;
+    margin-right: 79px;
+    border-right: solid var(--first-color) 2px;
 }
 .footer-img{
-    max-width: 183px;
-    max-height: 70px;
+    margin-top: 35px;
 }
 .div-flex{
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .footer-overlay{
     display: flex;
     flex-direction: row;
-    background-position:100% 45%;
+    background-position:100% 44%;
     background-size: cover;
-    max-height: 223px;
+    height: 225px;
     background-image: linear-gradient( rgba(47,74,97,0.87), rgba(47,74,97,0.87)), 
-    url(../img/Rectangle\ 104\ \(8\).png);
+    url(../img/Fish-in\ water\(9\).jpg);
     background-repeat: no-repeat;
     margin-right: -14px;
+    padding-left: 206px;
+}
+.container-div{
+    display: flex;
+    flex-direction: row;
+    max-width: 1032px;
+    margin: 0 auto;
+    border: none;
 }
 .footer-ul{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    padding-top: 75px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: var(--first-color);
+    gap: 24px;
 }
-.footer-flex-ul{
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    color: var(--first-color);
+.footer-img-div{
+    padding-bottom: 6px;
 }
-.footer-ul-flex{
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    color: var(--first-color);
-}
-.footer-text{
+.footer-p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    padding-top: 35px;
+    padding-left: 138px;
     color: var(--first-color);
 }
