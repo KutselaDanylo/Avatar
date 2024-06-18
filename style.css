@@ -189,9 +189,15 @@ a{
    background-repeat: no-repeat;
 }
 .main-overlay-div-ul{
+
     padding-top: 184px;
     max-width: 376px;
     max-height: 381px;
+}
+.main-overlay-div > .container{
+
+    display: flex;
+justify-content: space-between;
 }
 .main-p{
     font-size: 20px;
@@ -216,7 +222,7 @@ a{
     text-align: left;
     max-width: 376px;
     color: var(--first-color);
-    max-width: 289px;
+    max-width: 376px;
     padding-bottom: 50px;
 }
 .main-button{
@@ -234,15 +240,18 @@ a{
     border-radius: 45px 0px;
 }
 .main-img-div-bottom{
-    margin-bottom: 120px;
-    padding-left: 982px;
+    margin-top: 320px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+    align-items: flex-end;
 }
 .li-img{
     margin-left: 20px;
     padding-bottom: 24px;
 }
 .main-img{
-    padding-bottom: 200px;
+    padding-bottom: 00px;
 }
 .main-overlay-div-bottom{
     max-width: 1030px;
